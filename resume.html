@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>潘灏 · AI 产品经理 / 产品负责人 · 简历</title>
+<meta name="description" content="潘灏 · AI 产品经理 / 产品负责人（B 端 · AI 原生产品方向）· 常驻深圳">
+<style>
+:root{
+  --bg:#0b0e14; --bg2:#111621; --card:#151b28; --line:#232c3d;
+  --fg:#e8edf7; --fg-dim:#9aa7bd; --accent:#ff6a00; --accent2:#ff9a3c;
+  --ok:#2ecc71; --radius:14px;
+  --fs:16px; --lh:2.0;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:0;
+  background:
+    radial-gradient(1100px 520px at 12% -8%, rgba(255,106,0,.16), transparent 60%),
+    radial-gradient(900px 480px at 100% 0%, rgba(60,130,255,.12), transparent 55%),
+    var(--bg);
+  color:var(--fg);
+  font:var(--fs)/var(--lh) -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",Segoe UI,Helvetica,Arial,sans-serif;
+  letter-spacing:.01em;
+}
+.wrap{max-width:920px;margin:0 auto;padding:34px 22px 72px}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,106,0,.14),rgba(20,26,38,.9) 42%,rgba(20,26,38,.96));
+  border:1px solid var(--line);border-radius:18px;padding:34px 30px;margin-bottom:26px;
+  box-shadow:0 18px 50px -22px rgba(0,0,0,.9);
+  animation:rise .5s ease both;
+}
+.hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,154,60,.10),transparent);
+  transform:translateX(-100%);animation:sweep 6.5s ease-in-out infinite;
+}
+@keyframes sweep{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hero h1{margin:0 0 8px;font-size:2.15rem;letter-spacing:.04em}
+.hero .sub{color:var(--accent2);font-weight:700;font-size:1.06rem;margin-bottom:12px}
+.hero .meta{color:var(--fg-dim);font-size:.93rem;line-height:2}
+.hero .meta b{color:var(--fg);font-weight:600}
+.badge{
+  display:inline-block;margin:0 6px 6px 0;padding:4px 11px;border-radius:999px;font-size:.78rem;
+  background:rgba(255,106,0,.12);border:1px solid rgba(255,106,0,.35);color:var(--accent2)
+}
+
+/* Sections */
+section{
+  background:linear-gradient(180deg,var(--card),var(--bg2));
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;margin:0 0 22px;
+  box-shadow:0 12px 34px -24px rgba(0,0,0,.9);
+  transition:transform .18s ease,border-color .18s ease;
+}
+section:hover{transform:translateY(-2px);border-color:rgba(255,106,0,.32)}
+h2{font-size:1.2rem;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line);color:#fff;letter-spacing:.06em}
+h2:before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;background:var(--accent);margin-right:10px;vertical-align:middle}
+h3{font-size:1.06rem;margin:26px 0 12px;color:#fff;line-height:1.5}
+h4{font-size:1.0rem;margin:20px 0 10px;color:var(--accent2)}
+h3:first-of-type,h4:first-of-type{margin-top:4px}
+p{margin:12px 0}
+ul{margin:12px 0;padding-left:22px}
+li{margin:9px 0}
+strong{color:#fff}
+em{color:var(--fg-dim);font-style:normal;font-size:.92rem}
+code{background:rgba(255,255,255,.06);padding:1px 6px;border-radius:5px;font-size:.9em}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.94rem;display:block;overflow-x:auto;white-space:nowrap}
+thead th{
+  text-align:left;background:rgba(255,106,0,.10);color:var(--accent2);
+  padding:13px 14px;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap
+}
+td{padding:13px 14px;border-bottom:1px solid rgba(35,44,61,.7);vertical-align:top;white-space:normal;line-height:1.85}
+tbody tr:hover td{background:rgba(255,255,255,.03)}
+blockquote{
+  margin:16px 0;padding:14px 18px;border-left:3px solid var(--accent);
+  background:rgba(255,106,0,.07);border-radius:0 8px 8px 0;color:var(--fg-dim);font-size:.93rem
+}
+hr{border:0;border-top:1px dashed var(--line);margin:16px 0}
+
+/* 数字高亮 */
+.num{color:var(--accent2);font-weight:700;padding:0 1px}
+.ph{color:#ffd08a;background:rgba(255,208,138,.12);border-radius:5px;padding:1px 6px;font-size:.86em}
+
+footer{color:var(--fg-dim);font-size:.82rem;text-align:center;margin-top:26px;line-height:1.9}
+
+/* 移动端 */
+@media (max-width:640px){
+  :root{--fs:14.5px}
+  .wrap{padding:16px 12px 40px}
+  .hero{padding:22px 18px}
+  .hero h1{font-size:1.65rem}
+  section{padding:16px 15px;border-radius:12px}
+  table{font-size:.88rem}
+  h2{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+
+/* ============ 打印 / PDF（A4，克制排版） ============ */
+@media print{
+  @page{size:A4;margin:14mm 13mm}
+  html,body{background:#fff!important;color:#151515!important}
+  body{font-size:9.6pt;line-height:1.62}
+  .wrap{max-width:none;padding:0}
+  .hero{
+    background:#fff!important;border:0;border-bottom:1.8pt solid #b45309;border-radius:0;padding:0 0 5pt;margin:0 0 7pt;
+    box-shadow:none;animation:none
+  }
+  .hero:before{display:none}
+  .hero h1{font-size:17pt;margin:0 0 2pt;color:#000}
+  .hero .sub{color:#92400e!important;font-size:9.6pt;margin-bottom:3pt}
+  .hero .meta{color:#333!important;font-size:8.3pt;line-height:1.5}
+  .hero div[style]{margin-top:4pt!important}
+  .badge{background:#fff!important;border:.5pt solid #b45309;color:#92400e!important;padding:0 4pt;font-size:7.4pt;margin:0 3pt 0 0}
+  section{
+    background:#fff!important;border:0;border-radius:0;padding:0;margin:0 0 10pt;box-shadow:none;
+    break-inside:auto
+  }
+  section:hover{transform:none}
+  h2{font-size:11pt;color:#000;border-bottom:.7pt solid #999;padding-bottom:2.5pt;margin:0 0 6pt;break-after:avoid}
+  h2:before{background:#b45309;width:6pt;height:6pt;margin-right:5pt}
+  h3{font-size:9.8pt;color:#000;margin:8pt 0 3.5pt;break-after:avoid;line-height:1.35}
+  h4{font-size:9.1pt;color:#92400e;margin:4pt 0 1.6pt;break-after:avoid}
+  p,li{orphans:3;widows:3}
+  ul{margin:2pt 0;padding-left:12pt}
+  li{margin:2.4pt 0;font-size:9.4pt;line-height:1.6}
+  p{font-size:9.4pt;margin:3.5pt 0;line-height:1.62}
+  em{font-size:8.8pt}
+  table{display:table!important;width:100%;font-size:8.5pt;border-collapse:collapse;margin:3pt 0;break-inside:avoid;white-space:normal}
+  thead th{background:#f3f4f6!important;color:#000!important;border-bottom:.7pt solid #999;padding:2.6pt 5pt;font-size:8.5pt}
+  td{padding:2.4pt 5pt;border-bottom:.4pt solid #e5e7eb;color:#111;font-size:8.5pt;line-height:1.38}
+  blockquote{background:#fff8f0!important;border-left:2pt solid #b45309;color:#333;padding:3pt 6pt;margin:3pt 0;font-size:8.8pt;line-height:1.42}
+  hr{display:none}
+  .num{color:#92400e!important}
+  .ph{background:#fff;border:.4pt dashed #b45309;color:#92400e!important;padding:0 2pt;font-size:8.4pt}
+  footer{color:#666!important;font-size:7.6pt;margin-top:5pt;line-height:1.5}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>潘灏</h1>
+  <div class="sub">前线部署工程师（FDE）/ 产品负责人（具身智能 · 硬科技）</div>
+  <div class="meta">男 · 28 岁 · 6 年技术履历｜企业 IT → 客户现场交付 → AI 产品与具身智能 · <strong>常驻深圳（可接受驻场出差）</strong>
+电话：135 3014 7992 ｜ 邮箱：547820639@qq.com ｜ GitHub：github.com/qq547820639</div>
+  <div style="margin-top:12px">
+    <span class="badge">随时到岗</span>
+    <span class="badge">常驻深圳</span>
+    <span class="badge">AI 协同交付</span>
+    <span class="badge">具身智能 / 外骨骼</span>
+  </div>
+</header>
+
+<main>
+<section>
+<h2>求职意向</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目标岗位</td>
+<td><strong>FDE / 前线部署工程师 · 解决方案架构师 · AI 产品负责人</strong>（具身智能、机器人、工业 AI 行业优先）</td>
+</tr>
+<tr>
+<td>期望薪资</td>
+<td>35-45K × 13-16 薪（可面议）</td>
+</tr>
+<tr>
+<td>期望城市</td>
+<td>深圳（常驻，无异地调动成本）；<strong>可接受 1-2 周/月驻场出差</strong></td>
+</tr>
+<tr>
+<td>到岗时间</td>
+<td>随时到岗（可即时入职）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section><section>
+<h2>个人概述</h2>
+<p><strong>硬科技 FDE + 产品负责人</strong>：6 年里有 4 年在客户现场做交付（A 股上市公司驻场项目），近两年在具身智能创业团队把&quot;现场交付&quot;升级为&quot;产品化交付&quot;——一个人同时承担<strong>挖需求、定边界、现场做成、抽象成体系</strong>的闭环。</p>
+<p><strong>三个阶段的能力证据</strong>：</p>
+<ul>
+<li><strong>客户现场交付（2020-2021，捷顺）</strong>：驻场交付重庆壁山城市停车、贵阳宏立城物业天启集中管控等非标项目——到现场理解客户实际业务流程，把通用产品按现场约束配置、联调、上线并保障业务不中断</li>
+<li><strong>0→1 工业 AI 平台与工程化体系</strong>（2026.07 - 2026.08 两个月内完成，单月并行 4 条交付线）：
+<ul>
+<li><strong>0→1 AI 工业平台</strong>：EWOH 工厂具身智能平台，从业务定义到发布候选版本，验收证据链支撑商务验证与试点方案推进</li>
+<li><strong>11 款产品量产体系</strong>：标准化量产文档链 + 链式门禁工程执行，把设计参数收敛到可下发代工厂的验收窗口，贯通至首件制造启动</li>
+<li><strong>6 条产品线知识产权体系</strong>：34 件专利申请文件在产品公开发售前完成布局，全部执行现有技术检索与 FTO 规避</li>
+</ul>
+</li>
+</ul>
+<p><strong>工作模式</strong>：以 <strong>AI 增强研发全流程</strong>（需求分析、方案设计、文档与代码生成、测试验证），本人负责业务场景拆解、产品边界定义、集成方案判断、部署与验收闭环——<strong>代码由 AI 辅助生成，架构判断与现场问题定位由我负责</strong>。把模糊需求变成可验证的交付物，并对最终交付质量负责。</p>
+<hr />
+</section><section>
+<h2>核心能力</h2>
+<table>
+<thead>
+<tr>
+<th>能力域</th>
+<th>说明</th>
+<th>佐证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>业务场景拆解</strong></td>
+<td>把模糊的业务诉求拆成可交付的产品范围与验收标准</td>
+<td>EWOH 平台从 0 定义到发布候选；多条产品线场景方案</td>
+</tr>
+<tr>
+<td><strong>客户现场交付</strong></td>
+<td>驻场理解业务流程 → 按现场约束配置 / 联调 / 上线 → 保障业务不中断</td>
+<td>重庆壁山城市停车、贵阳宏立城天启集中管控（捷顺，2020-2021）</td>
+</tr>
+<tr>
+<td><strong>业务需求翻译</strong></td>
+<td>客户说不清需求时自己去看、去问，把模糊诉求变成可验收范围</td>
+<td>贵阳项目收集甲方新增需求；EWOH 五类能力域定义</td>
+</tr>
+<tr>
+<td><strong>集成与联调</strong></td>
+<td>拉通多方系统（支付 / 坐席 / 设备 / 云），处理接口与数据对接</td>
+<td>壁山项目拉通支付系统与云坐席整合</td>
+</tr>
+<tr>
+<td><strong>产品方案设计</strong></td>
+<td>功能模块、业务流程、状态机与契约的设计与评审</td>
+<td>EWOH 五类能力域；多产品线方案</td>
+</tr>
+<tr>
+<td><strong>AI 协同交付</strong></td>
+<td>需求到可运行产品的全过程编排，人工负责设计把关与验收</td>
+<td>19 个 GitHub 仓库 + 多个内部平台；AIPD-OS 交付方法论</td>
+</tr>
+<tr>
+<td><strong>质量把关与验收</strong></td>
+<td>验收评审、审计报告、性能专项、缺陷闭环</td>
+<td>EWOH 7 份审计报告；多项目验收门</td>
+</tr>
+<tr>
+<td><strong>知识产权布局</strong></td>
+<td>专利检索与 FTO 规避、申请文件体系、撰写规范与参数裁决</td>
+<td>6 条产品线 / 34 件申请文件 / 180 幅附图</td>
+</tr>
+<tr>
+<td><strong>量产工程化</strong></td>
+<td>规格书 → BOM → CTQ → EVT/DVT/PVT 文档链 + 链式门禁工程执行，参数口径受控</td>
+<td>11 款产品量产五件套 + 6 款仿真收敛</td>
+</tr>
+<tr>
+<td><strong>战略与商务支撑</strong></td>
+<td>合作谈判文件、商业模式与报价模型、尽调资料包</td>
+<td>科泰 / 光电 / 捷顺三条线</td>
+</tr>
+<tr>
+<td><strong>内容与多媒体</strong></td>
+<td>产品宣传片、TVC、产品手册、交互展示页</td>
+<td>45 个视频资产；4 个 HTML 交互页</td>
+</tr>
+<tr>
+<td><strong>企业 IT 与安全</strong>（4 年）</td>
+<td>桌面 / 网络 / 服务器 / 信息安全从 0 到 1（职业底盘，支撑产品落地理解）</td>
+<td>200+ 终端体系化；终端安全全覆盖</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section><section>
+<h2>工作经历</h2>
+<h3>天津新躯纪元外骨骼具身机器人科技有限公司 ｜ 技术负责人（软件平台与算力线）｜ 2026.07 - 至今（在职）</h3>
+<p>工业外骨骼与工厂具身智能方向的创业公司（2026-06 成立）。作为创始团队核心成员（公司 2026-08 对外方案团队页以&quot;技术合伙人&quot;列示，与 CEO 及联合创始人并列），负责软件平台与算力基础设施线的方案设计、AI 协同交付与质量验收；自 2026.07.01 入职起技术线由本人主导。</p>
+<ul>
+<li>主导 <strong>EWOH 工厂具身智能平台</strong>从 0 到发布候选版本的完整过程：定义业务场景与产品范围，组织 AI 协同实现，通过多轮验收评审（详见「项目与作品」）</li>
+<li>建立平台级数据底座规范：统一数据模型、版本化变更管理、多租户隔离与回滚机制，保证系统可重复安装、可追溯、可回退</li>
+<li>完成平台容器化部署与滚动验证（rc39 → rc47），过程中定位并修复 8 项自动化检查未覆盖的问题，推动补齐质量门禁；产出 7 份审计与验收报告</li>
+<li>沉淀部署与运维标准作业文档：服务清单、配置管理、升级回滚、备份恢复与安全待办</li>
+<li>建立公司级<strong>知识产权与量产工程化交付体系</strong>：6 条产品线的 34 件专利申请文件（含检索与 FTO 规避机制）、11 款产品的量产准备文档链与链式门禁工程体系（详见「项目与作品」）</li>
+<li>主导 <strong>H225/V6K（225cm 级全身可穿戴机甲）系统研究</strong>：论文母稿第 1 版 → v48 全程主导（v23 理论体系成型）+ 中文研究长稿（28 章 / 约 23.7 万字），沉淀&quot;人体运动链优先 + 七层架构 + 后入式半包围&quot;设计体系与证据分级规则</li>
+<li>主导 <strong>NEOSOMA（新躯纪元）品牌从 0 到 1</strong>：品牌命名与叙事（&quot;人类的第二副身体&quot;）、标识原理（脊柱 × AI 神经 × 外骨骼 × 进化轴线）、中英双语 VI 手册 V1.0（深空黑 / 纯净白 / 核心橙 + 字体系统），统一对外物料</li>
+<li>支撑商务与申报：平台架构说明、合作签约互动演示、战略合作材料、天津市科技计划项目群申报方案（编制中）</li>
+</ul>
+<p><strong>团队层面产出（公司/团队整体产出，仅作业务背景说明）</strong></p>
+<ul>
+<li><strong>产品矩阵</strong>：六大产品线（10+ 型号）外骨骼产品的产品手册与供应链选型定价，形成 6 份供应链选型报告 + 7 份产品技术规格书；下肢反馈康复训练系统由合作方浙江佑仁持二类医疗器械注册证（浙械注准 20232191985）</li>
+<li><strong>产业合作</strong>：光电集团（国有军工平台）深度战略合作意向已达成（外骨骼产品唯一合作安排，框架协议谈判中）；秦皇岛科泰工业（战略投资 + 联合研发 + 工厂试点）接洽推进中；捷顺科技（跨赛道）方案阶段；已有首批百万级签约订单落地</li>
+<li><strong>场景解决方案</strong>：覆盖机场地勤、交通、军工、矿山、物流、体育、铁路等行业场景</li>
+<li><strong>知识资产</strong>：建立团队知识台账体系（13 大类）；参与 2026 年天津市科技计划项目群申报（1 个母体技术体系 + 3 个高校项目 + 1 个企业工程载体架构，编制中）</li>
+</ul>
+<hr />
+<h3>深圳市顺友跨境物流股份有限公司 ｜ 运维工程师 ｜ 2024.11 - 2026.06</h3>
+<p>加入时公司处于快速发展期，IT 运维体系几乎空白，需从 0 到 1 搭建基础框架。</p>
+<p><strong>桌面运维体系建设（主责）</strong></p>
+<ul>
+<li>主导设计桌面运维管理流程与操作 SOP，覆盖「故障受理 → 分级响应 → 处理 → 回访 → 归档」全链路，从&quot;人找人&quot;变为&quot;工单驱动&quot;</li>
+<li>完成桌面硬件资产管理系统的前期调研与选型并推动上线，实现 <strong>200+ 终端设备</strong>全生命周期可视化管理</li>
+<li>负责群晖 NAS 网盘、联软桌管及杀毒软件的选型与上线，终端安全覆盖率提升至 100%</li>
+<li>搭建运维知识库降低重复问题处理成本；参与桌面运维考核指标制定</li>
+</ul>
+<p><strong>信息安全体系建设（核心参与）</strong></p>
+<ul>
+<li>参与公司信息安全策略与整体建设计划制定，覆盖流程、制度、设计与实施</li>
+<li>推动 DLP 数据防泄漏、软件白名单、安全沙盒等安全策略从方案到落地</li>
+<li>负责安全事件应急处理，推动事前演练预防与事中监控；执行应急预案与恢复计划</li>
+</ul>
+<p><strong>云基础设施运维（参与）</strong></p>
+<ul>
+<li>参与开发 / 测试环境的服务器与操作系统选型部署，支撑研发迭代</li>
+<li>负责内网服务日常运维、部署、监控与优化，保障线上环境稳定</li>
+<li>主导公司网络设备与网络环境规划整改，提升安全性与稳定性</li>
+</ul>
+<hr />
+<h3>深圳市捷顺科技实业股份有限公司（A 股上市 002609）｜ 运维工程师 / 技术支持 ｜ 2020.06 - 2024.09</h3>
+<p>毕业后第一份工作，从技术支持做起，4 年多完成从&quot;终端支持&quot;到&quot;项目主导&quot;的能力跃迁。</p>
+<p><strong>2020 - 2021 客户现场交付阶段（FDE 形态）</strong>——派驻客户现场，把通用产品按客户实际业务流程落地：</p>
+<ul>
+<li><strong>贵阳宏立城物业天启集中管控项目</strong>（2021.04 - 2021.09，项目协调员 / 技术支持）：独立部署并管理非标项目，保障客户业务流程在新旧系统间平稳过渡、业务不中断；与业务部门协作收集并处理甲方新增需求与运行问题；分析解决系统数据及接口同步问题</li>
+<li><strong>重庆壁山城市停车项目</strong>（2020.11 - 2021.02，技术支持 · 项目核心成员）：协助项目经理拉通支付系统，与运维、研发对接，落地无牌车扫码 / 支付宝 / 微信 / 公众号 / APP 支付的开发与测试；负责云坐席系统整合，保障事件转化、开关闸、环境监控与视频对讲稳定；优化车场迁移流程</li>
+<li>同期承担终端支持：统一安装配置与管理办公电脑，处理虚拟桌面、公网邮箱等 IT 资源分配；协助公共 IT 设备（投影、打印机、大屏、视频会议系统）部署</li>
+</ul>
+<p><strong>2021 - 2023 运维工程师阶段</strong></p>
+<ul>
+<li><strong>网络运维</strong>：机房及各楼层网络运维管理，设备巡检、配置备份、网络安全策略实施，分公司专线监控</li>
+<li><strong>服务器运维</strong>：超融合系统管理与服务器新建迁移故障处理；roseHA 双机热备部署</li>
+<li><strong>数据安全</strong>：加密服务器与网关运维，执行 DLP、软件白名单等数据安全建设，安全沙盒保护未上云终端</li>
+<li><strong>系统管理</strong>：云桌面服务管理（异常处理、模板更新）；内网、DMZ 区与前端车场监控系统管理</li>
+<li><strong>服务发布</strong>：上线流程核查、部署发布、跨部门协同验证</li>
+</ul>
+<p><strong>2023 - 2024.09 项目主导阶段</strong></p>
+<ul>
+<li>主导 Citrix 云桌面全公司迁移项目（详见「项目与作品」）</li>
+</ul>
+<hr />
+</section><section>
+<h2>项目与作品</h2>
+<h3>一、新躯纪元平台与产品交付</h3>
+<h4>EWOH 工厂具身智能平台 ｜ 2026.07 - 至今</h4>
+<p><strong>业务场景</strong>：制造现场使用外骨骼设备的作业人员，需要对其作业过程、设备状态与安全风险进行统一协同管理，并支持在多个工厂之间快速复制。</p>
+<p><strong>产品功能</strong>（五类能力域）</p>
+<table>
+<thead>
+<tr>
+<th>能力域</th>
+<th>面向业务的说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设备接入与采集</td>
+<td>接入外骨骼设备、环境传感器、视觉检测结果与 MES/ERP 工单数据，支持工业现场常用协议</td>
+</tr>
+<tr>
+<td>实时推理与告警</td>
+<td>对设备与人员状态实时分析，异常事件自动告警，形成事件闭环</td>
+</tr>
+<tr>
+<td>任务与排程调度</td>
+<td>按产能、人员与设备约束自动生成作业排程，低配环境下自动降级保证可用</td>
+</tr>
+<tr>
+<td>风险分析与资源管理</td>
+<td>作业风险分析、人员与设备资源管理、OEE 与质量指标跟踪</td>
+</tr>
+<tr>
+<td>多工厂复制</td>
+<td>以工厂模板沉淀配置与场景包，支持新工厂快速复制部署</td>
+</tr>
+</tbody>
+</table>
+<p><strong>交付结果</strong></p>
+<ul>
+<li>推动平台通过多轮验收评审达到发布候选标准，形成 7 份审计与验收报告的验收证据链，支撑商务验证与联合试点方案推进；2026-08-23 演示实例验收项目关闭（代码级自验收，无客户签署）</li>
+<li>系统达到发布候选版本并完成容器化部署与滚动验证（rc39 → rc47）</li>
+<li>验证过程中定位并修复 8 项自动化检查未覆盖的问题，推动补齐质量门禁</li>
+<li>平台<strong>安全边界明确</strong>：不参与设备实时安全控制，急停、限扭、关节实时控制等安全能力永久保留在设备控制器本地</li>
+<li><strong>当前状态（如实）</strong>：验证环境为公司演示实例，运行数据来自内置模拟器；工业协议已完成编解码层，真实设备接入待首个试点现场验证</li>
+</ul>
+<h4>知识产权交付：专利布局 ｜ 2026.08</h4>
+<p>面向 6 条产品与技术线，主导产出 <strong>34 件专利申请文件</strong>（发明 13 / 实用新型 19 / 外观设计 2），配套 <strong>32 份技术交底书</strong>与 <strong>180 幅说明书附图</strong>（另 12 幅外观设计视图），统一交付 Markdown + Word 双版本——在产品公开发售与展会公开前完成布局，为产品线构建专利护城河与 FTO 安全边界。</p>
+<blockquote>
+<p>状态说明：均为<strong>递交前草稿</strong>，著录项（申请人 / 发明人）按规范留白待定稿，尚未正式递交、未授权。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>交付包</th>
+<th>覆盖产品线</th>
+<th>件数</th>
+<th>类型分布</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLE01</td>
+<td>有源下肢外骨骼</td>
+<td>6</td>
+<td>发明 1 / 实用新型 4 / 外观设计 1</td>
+</tr>
+<tr>
+<td>PLRE01</td>
+<td>无源腰部助力外骨骼</td>
+<td>6</td>
+<td>发明 1 / 实用新型 4 / 外观设计 1</td>
+</tr>
+<tr>
+<td>WBX1</td>
+<td>双臂无源工业提举外骨骼</td>
+<td>6</td>
+<td>发明 2 / 实用新型 4</td>
+</tr>
+<tr>
+<td>抱抱甲 CarryEase</td>
+<td>婴儿背带助力</td>
+<td>5</td>
+<td>发明 2 / 实用新型 3</td>
+</tr>
+<tr>
+<td>背背甲 CarryEase Back</td>
+<td>后背式婴儿背带</td>
+<td>3</td>
+<td>发明 1 / 实用新型 2</td>
+</tr>
+<tr>
+<td>轮式仿人陪练机器人</td>
+<td>运动陪练机器人</td>
+<td>8</td>
+<td>发明 6 / 实用新型 2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>质量机制（这套交付的价值所在）</strong></p>
+<ul>
+<li><strong>统一撰写规范</strong>：著录项目 → 技术领域 → 背景技术 → 发明内容 → 附图说明 → 具体实施方式 → 权利要求建议稿 → 摘要 → 检索关键词与 IPC</li>
+<li><strong>现有技术检索与 FTO 规避</strong>：逐件给出对比文件与 IPC（如 KR101947114B1、US7931178B2、EP3571018B1、CN211408344U 等），设定明确规避红线</li>
+<li><strong>参数矛盾与缺失处置</strong>：参数冲突逐条裁决留痕；缺失项一律保留「待设计方确认」占位，严禁编造</li>
+<li><strong>申请时序纪律</strong>：同包各件同日提交，且早于产品公开发售或展会公开</li>
+<li><strong>表述纪律</strong>：全文禁用「首次 / 填补空白 / 国际领先 / 首创」等不可验证表述</li>
+</ul>
+<h4>量产准备交付：从设计到可制造 ｜ 2026.07 - 2026.08</h4>
+<p>以**《AI 产品手册链式生成方法论》**（V1.0/V2.0，含分阶段提示词示例、新人操作手册与复刻作业指导书）为统一方法底座，按&quot;链式门禁 + 单一事实源&quot;模式执行。为 <strong>11 款产品</strong>建立标准化量产准备文档体系，每款统一交付 5 份核心文档：<strong>产品技术规格书 → 量产 BOM 框架 → 关键参数确认表（CTQ）→ 供应链开发清单 → EVT/DVT/PVT 验证计划</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>版本</th>
+<th>附加交付</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无源腰部助力外骨骼</td>
+<td>V1.0</td>
+<td>代工厂量产资料包、梁单元仿真模型与参数收敛报告</td>
+</tr>
+<tr>
+<td>抱抱甲 CarryEase</td>
+<td>V1.0-RC1</td>
+<td>仿真模型与材料验收窗口、参数收敛报告</td>
+</tr>
+<tr>
+<td>背背甲 CarryEase Back</td>
+<td>V1.0-RFQ</td>
+<td>仿真与生产参数包（31 份文件）</td>
+</tr>
+<tr>
+<td>WBX1 双臂无源外骨骼</td>
+<td>V0.9</td>
+<td>P0 仿真与材料冻结交付包（27 份文件）</td>
+</tr>
+<tr>
+<td>FlexAid AC-1</td>
+<td>V1.0</td>
+<td>最终产品设计说明</td>
+</tr>
+<tr>
+<td>下肢助行外骨骼</td>
+<td>V0.1</td>
+<td>量产准备核心文档包</td>
+</tr>
+<tr>
+<td>软体助力内裤</td>
+<td>v1.0</td>
+<td>数字收敛与打样参数、生产报告</td>
+</tr>
+<tr>
+<td>智能下肢反馈康复训练系统</td>
+<td>V0.9</td>
+<td>—</td>
+</tr>
+<tr>
+<td>ILLE01 智能负重下肢外骨骼</td>
+<td>V0.1</td>
+<td>工厂沟通版五件套</td>
+</tr>
+<tr>
+<td>EXO-H1 主动腰髋助力外骨骼</td>
+<td>A0</td>
+<td>—</td>
+</tr>
+<tr>
+<td>SLEK01 智能单侧膝踝助力外骨骼</td>
+<td>V0.1</td>
+<td>工厂沟通版五件套</td>
+</tr>
+</tbody>
+</table>
+<p><strong>链式门禁工程执行（示范线，从文档到首件制造的完整链路）</strong></p>
+<ul>
+<li>
+<p><strong>M0 → M3 阶段门禁交付</strong>：26 个阶段交付包（项目启动与单一事实源 + 专家能力台账、M2/M3 系列含多轮评审迭代），以&quot;可讲清、可答对、可复刻&quot;为验收标准</p>
+</li>
+<li>
+<p><strong>RC2 制造就绪数字发布</strong>（2026-08-06）：参数化 CAD 源文件 + 制造工程图册 + 15 项 CTQ + 公差链与 Monte Carlo 数字筛查 + 分层 BOM + RFQ/DFM 包 + FAI/SN/NCR 模板，可直接用于供应商询价与 Pilot 首件准备</p>
+</li>
+<li>
+<p><strong>PB1 首件制造启动执行包</strong>（2026-08-06）：制造发布令、逐件 FAI 检验清单、预留 SN 追溯体系与 PB2 准入台账</p>
+</li>
+<li>
+<p><strong>状态边界（如实）</strong>：以上为数字发布与执行准备，未声称实物采购/加工/测试已完成</p>
+</li>
+<li>
+<p><strong>参数口径全程受控</strong>：标注为工程建议值或待确认的参数，在经 EVT 实测数据确认并签署前不得转为冻结参数，不得据以开模、批量采购或作合规声明</p>
+</li>
+<li>
+<p>6 款产品配套<strong>仿真与材料参数收敛报告</strong>，把设计参数收敛到可下发代工厂的验收窗口</p>
+</li>
+</ul>
+<h4>H225/V6K 全身可穿戴机甲系统研究 ｜ 2026.07 - 至今</h4>
+<p>225cm 级后入式大型全身可穿戴人形机甲（&quot;太空机甲&quot;产品线研究本体），按 AI 协同模式主导推进，全程保留证据分级与失败记录。</p>
+<ul>
+<li>产出<strong>论文母稿全谱系迭代</strong>（第 1 版 → v48 全程主导；v23 理论体系成型，其后以仿真与工程验证深化为主）；<strong>中文研究长稿 1 份</strong>（28 章 / 208 表 / 约 23.7 万字，2026-07-30）</li>
+<li>建立<strong>人体运动链优先（HKCP）+ 人体轮廓七层架构 + 后入式半包围穿戴状态机</strong>设计体系，覆盖 38 功能模块、113 面板、人体百分位统计建模</li>
+<li>配套<strong>工程受控包（全谱系 40+ 个）</strong>：G0-G1 受控状态包（G0 基线门：47 工程包 1,067 文件 SHA-256 登记；G1 治理门：354 项评审决策主账——均待真人签署关闭）、<strong>V6K 链式执行包</strong>（R0→R2M4 需求与受控评审链 20+ 包、W0-W2 后入式执行链、F0-F4 面板化与运动路径、V6K1-9 机构与制造深化、独立审计包）、V6K 正式 240 帧动画、历史实验实施记录 V1.1（可复现审计版）、后入式穿戴结构验证稿系列、展开装甲迭代工程包（R00-R20 共 17 个）</li>
+<li><strong>成熟度口径（如实）</strong>：方法体系与数字工程较完整，处于数字候选与局部制造深化阶段；物理原型、真人试验与生产放行尚未完成——每个未决项均转为下一轮 CAD/台架/试验任务</li>
+</ul>
+<h4>GALSS 步态仿真科研线 ｜ 2026.07 - 2026.08</h4>
+<p><strong>GALSS（步态自适应大规模仿真系统）</strong>：面向可穿戴助行设备控制算法验证的科研线——以 10 万级人口校准数字人体 + 预注册统计验收框架解决&quot;小样本人体试验无法覆盖真实人群&quot;的验证缺口，按 AI 协同模式主导推进。</p>
+<ul>
+<li>产出<strong>会议论文 1 篇</strong>（十万级数字人体闭环仿真架构与统计验收框架）与<strong>期刊长文 2 个终稿级版本</strong>（V3.1 投稿冻结稿、重构 V3 投稿终稿：人口校准数字人体 + 参考条件化运动控制器 + 预注册统计验收方法学）</li>
+<li>配套<strong>完整验证证据链</strong>：执行基线与 Pilot 实施报告、第六轮制品验证与生产保真推进报告（Pilot-001 制品 29/33 精确复现）、可复现仓库（验证准则 + 全轨迹日志）</li>
+<li>证据纪律与 H225 一致：作者著录为占位待定（投稿前补充），验证报告自评四级成熟度并保留未决项</li>
+</ul>
+<p><strong>公司科研体系一览（并列研究线，均按&quot;主导 + AI 协同&quot;模式交付）</strong>：① H225（整机结构与穿戴研究）② GALSS（算法验证方法学研究）③ <strong>ExoSkin（人机物理界面电子皮肤，科研预研立项阶段）</strong>；另含腕戴感知理论基础综述与轮式仿人论文框架。</p>
+<h4>产品内容与多媒体交付 ｜ 2026.07 - 2026.08</h4>
+<ul>
+<li><strong>产品宣传视频</strong>：5 个批次共 <strong>45 个视频资产</strong>，覆盖太空机甲、抱抱甲、无源负重外骨骼、EWON 等产品；含横版宣传片与竖屏 TVC（15 秒 / 9:16 规格），用于官网、社媒与展会投放</li>
+<li><strong>产品手册与规格书</strong>：10+ 款产品手册与规格书，形成 45 份 PDF 资产（含 15 份产品手册）；含 <strong>HPD 装甲 3D 打印技术规格书（V1.0 生产交付版，2026-08-20）</strong>——196 件打印件 + 五金标准件清单、公差协议与 3 轮真人穿戴验收判据，第三方制作方仅凭该文档即可独立完成制作与验收</li>
+<li><strong>交互式展示交付物</strong>：4 个 HTML 交互页面——3D 产品手册生成器（V9）、现有产品矩阵、次时代产品计划、已有产品展示</li>
+<li><strong>合作签约互动演示</strong>：为对外合作场景开发的签约互动演示</li>
+</ul>
+<h4>战略、商务与研究交付 ｜ 2026.07 - 2026.08</h4>
+<ul>
+<li><strong>战略合作谈判文件</strong>：科泰工业战略合作三件套（框架协议谈判稿 / 首期联合试点任务书 / 签署红线与谈判指令），合作处于谈判推进阶段；捷顺跨赛道合作 60 天交割准备方案与资本市场赋能战略</li>
+<li><strong>商务合作方案</strong>：面向产业方的外骨骼产品商业化方案与报价模型（V3.1，含用户数据版）</li>
+<li><strong>技术方案与尽调支撑</strong>：EWOH 工厂具身智能联合建设总体技术方案（主方案 + 架构图集 + 六项目融合说明 + 首个试点方案 + 技术证据与尽调资料包，共 105 份文件）</li>
+<li><strong>科研预研立项（ExoSkin）</strong>：外骨骼人机物理界面多模态电子皮肤，三年科研预研立项方案（V1.1：问题—假设—实验闭环 + 核心假设登记册 + G1/G2/G3 关卡实验设计）与 V2.2 战略验证执行包（Gate 化分段放行治理 + 投资裁决 + 供应商独立复核）；另有超体 90 天工程验证项目执行母包（WBS/RACI、采购预算、验证与风险证据门）等工程治理文档</li>
+<li><strong>科研论文</strong>：轮式仿人陪练机器人方向论文框架与投稿规划（3 篇骨架稿 + 1 篇完整稿，投稿须晚于专利受理）；腕戴感知理论基础综述；GALSS 科研线见上节</li>
+<li><strong>跨赛道研究报告</strong>：外骨骼 × 捷顺科技协同研究报告 9 版迭代（v1 → v9）+ 完整报告</li>
+<li><strong>捷顺合作交易设计</strong>：设计&quot;90 天联合验证 → 付费工业标杆 → 里程碑式合资&quot;三阶段交易路径，配套交易文件体系（TermSheet 框架、董事会/投委会备忘录、90 天与 12 个月内部作战手册）——附条件放行、可证伪、逐步定价的交易机制，避免一次性锁定估值与股权</li>
+</ul>
+<h4>Citrix 云桌面系统迁移与测试 ｜ 项目经理 / 技术支持专家 ｜ 2023.07 - 2024.09</h4>
+<p>公司原有云桌面系统性能不足、授权成本高，需全公司迁移到新平台。首次从头到尾主导的跨部门技术项目：</p>
+<ul>
+<li><strong>评估选型</strong>：从业务需求、兼容性、性能、成本四维对比多款方案，推动选型决策</li>
+<li><strong>环境搭建与灰度验证</strong>：搭建测试环境组织全量测试；收集全公司软件需求设计灰度方案，验证实际办公场景稳定性</li>
+<li><strong>风险管控</strong>：识别数据丢失、业务中断、用户不适应等风险，制定回退方案与缓解措施</li>
+<li><strong>成本论证</strong>：基于测试数据做成本效益分析，为管理层决策提供数据支撑</li>
+<li><strong>文档交付</strong>：完整测试报告与迁移评估报告</li>
+</ul>
+<hr />
+<h3>二、开源与独立作品（GitHub · 19 个仓库）</h3>
+<blockquote>
+<p>GitHub：github.com/qq547820639 ｜ 11 个公开 + 8 个私有 ｜ 以下作品同样采用 AI 协同开发，本人负责选题、产品定义、方案设计与验收。</p>
+</blockquote>
+<h4>具身智能与健康感知</h4>
+<table>
+<thead>
+<tr>
+<th>作品</th>
+<th>业务价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EWOH</strong>（私有）</td>
+<td>工厂具身智能平台，见上文</td>
+</tr>
+<tr>
+<td><strong>Embodied-Cloud</strong>（私有）</td>
+<td>机器人实验云平台：选模板即自动准备 GPU 与仿真环境，浏览器内写代码、跑训练、看实时仿真；支持高校课程管理与「仿真→真机」模型部署链路，用量按不可变账本计费</td>
+</tr>
+<tr>
+<td><strong>ANSWatch</strong>（私有）</td>
+<td>腕戴式多模态心理生理感知系统：融合皮肤电、脉搏波、皮温与运动信号评估压力与恢复；核心设计是信号质量不达标时如实报&quot;无法判断&quot;，并区分&quot;身体兴奋&quot;与&quot;心理压力&quot;。WESAD 数据集 <strong>LOSO 留一受试者 15 折、SVM 基线二分类 AUROC 0.903</strong>（报告注明 EDA 与皮温为主导信号、指标须打折解读）；配套理论基础综述（25 项工程决策 E1-E25 逐一映射理论依据、标注证据强度并登记 19 处证据空白）</td>
+</tr>
+<tr>
+<td><strong>ECHO-Mind</strong>（私有）</td>
+<td>手机端个人 AI 伴侣：被动感知生活节律，以动态生命场、壁纸与充电屏保呈现；三世界架构（现在 / 旅程 / 控制权），本地优先、原始数据不上云，所有 AI 输出可解释、可撤回</td>
+</tr>
+</tbody>
+</table>
+<h4>AI 产品与工作流</h4>
+<table>
+<thead>
+<tr>
+<th>作品</th>
+<th>业务价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AIPD-OS</strong></td>
+<td>面向产品负责人与工程师的 AI 产品开发助手，自主推进研究→设计→工程→制造准备，只在需决策时停下（MIT）</td>
+</tr>
+<tr>
+<td><strong>IdeaToLaunch</strong></td>
+<td>创意验证与产品落地工作流，串联市场分析、产品规划、发布准备与运营复盘</td>
+</tr>
+<tr>
+<td><strong>Vencertia-Intelligence-Lab</strong></td>
+<td>&quot;校准优先&quot;决策引擎，证据不足时诚实输出&quot;现在还下不了结论&quot;</td>
+</tr>
+<tr>
+<td><strong>WorldQuant-BRAIN-Alpha</strong></td>
+<td>本地化 alpha 研究工作台，自动完成量化策略生成→测试→打分→筛选（MIT，★12 / fork 2）</td>
+</tr>
+<tr>
+<td><strong>Deepseek-Harness-Docker</strong></td>
+<td>基于容器的 DeepSeek 本地化部署方案，浏览器内即可使用（Docker 封装层为本人工作，底层为上游开源项目）</td>
+</tr>
+<tr>
+<td><strong>webnovel-forge</strong></td>
+<td>AI 写作技能包，覆盖构思→大纲→正文→质检，内置&quot;去 AI 味&quot;质检体系</td>
+</tr>
+</tbody>
+</table>
+<h4>内容与创意工业化</h4>
+<table>
+<thead>
+<tr>
+<th>作品</th>
+<th>业务价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Video-Generation-Constitution</strong></td>
+<td>视频生成方法论，解决多帧一致性漂移（变脸、动作乱跳、镜头乱晃）（MIT）</td>
+</tr>
+<tr>
+<td><strong>tiktok-ad-video-skill</strong></td>
+<td>面向视频生成平台的标准化 Prompt 工程体系（MIT，★11 / fork 5）</td>
+</tr>
+<tr>
+<td><strong>suno-ai-music-industrial-handbook</strong></td>
+<td>基于 Suno V5.5 的 AI 音乐工业化生产体系，五步风格解构法（★5）</td>
+</tr>
+<tr>
+<td><strong>bieber-style-ai-music-guide</strong></td>
+<td>AI 音乐风格创作标准，将歌手风格解构为可量化参数（MIT，★2）</td>
+</tr>
+<tr>
+<td><strong>cantopop-lyrics-engineering</strong></td>
+<td>歌词风格可量化创作系统，十四维度评分 + 四变量数学模型（★1）</td>
+</tr>
+</tbody>
+</table>
+<h4>平台型产品</h4>
+<table>
+<thead>
+<tr>
+<th>作品</th>
+<th>业务价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web3-Music / Resonance</strong>（私有）</td>
+<td>AI 音乐创作、资产与商业许可平台：对话式创作→自动打分→多候选生成→定稿，作品升级为带权利记录的可交易资产，支持商业许可与品牌任务接单</td>
+</tr>
+<tr>
+<td><strong>Meta-Human / VoxStudio</strong>（私有）</td>
+<td>macOS 桌面数字人应用：三项能力（对话 / 听说呈现 / 知识检索）全部通过真实校验后才允许创建数字人</td>
+</tr>
+<tr>
+<td><strong>AI-Quotation</strong>（私有）</td>
+<td>企业采购询价平台，覆盖「询价→匹配→发送→报价→对比→定标」全流程，含供应商门户、智能比价与全流程追溯</td>
+</tr>
+<tr>
+<td><strong>workbuddy_commercial_ga_v1_0</strong>（私有）</td>
+<td>基于邮箱的 AI 数字公司操作系统：多专家团调度、任务级 Agent 执行、高风险动作人工审批；含订阅计费、用量计量、SLA 与合规证据门</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>三、早期项目经历（客户现场交付 · FDE 形态）</h3>
+<h4>贵阳宏立城物业天启集中管控项目 ｜ 项目协调员 / 技术支持 ｜ 2021.04 - 2021.09</h4>
+<ul>
+<li>独立部署并管理非标项目，确保业务流程在新旧系统间平稳过渡，避免业务中断</li>
+<li>与业务部门紧密合作，收集并处理甲方新增需求与运行问题</li>
+<li>分析解决系统数据及接口同步问题，显著提升同步效率与准确性</li>
+<li>收集、定位并修复系统 BUG，优化处理流程，降低系统故障率</li>
+<li>指导一线人员解决操作问题，通过培训提升团队自给自足能力</li>
+</ul>
+<h4>重庆壁山城市停车项目 ｜ 技术支持 ｜ 2020.11 - 2021.02</h4>
+<ul>
+<li>作为核心成员协助项目经理，<strong>成功拉通支付系统</strong>：确保无牌车扫码支付、支付宝 / 微信 / 公众号 / APP 支付功能的开发与测试落地</li>
+<li>负责云坐席系统整合，保障事件转化、开关闸、环境监控与视频对讲功能稳定</li>
+<li>优化车场迁移流程，提高迁移效率，减少对用户的影响</li>
+<li>支撑璧山区智慧停车管理体系建设</li>
+</ul>
+<hr />
+</section><section>
+<h2>教育背景</h2>
+<p><strong>广州航海学院</strong> ｜ 计算机科学与技术 ｜ 本科 ｜ 2016 - 2020</p>
+<ul>
+<li>大学英语四级（CET-4）</li>
+</ul>
+<hr />
+</section><section>
+<h2>其他</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>常驻地</td>
+<td>深圳（长期居住）</td>
+</tr>
+<tr>
+<td>特长</td>
+<td>摄影、绘画（视觉化表达习惯，做 PPT 与文档排版时会用到）</td>
+</tr>
+<tr>
+<td>工作风格</td>
+<td>先扛活、再想办法；不偷工减料；做完自己的事还愿意帮团队补位</td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+
+<footer>
+  本简历所有数据均可溯源至本人材料与交付物；专利为递交前草稿、论文作者著录待定、EWOH 为演示实例代码级自验收——均以如实口径标注。
+</footer>
+
+</div>
+<script>
+// 数字与关键指标高亮（克制：仅着色，不改变内容）
+document.addEventListener('DOMContentLoaded', function(){
+  var sel = 'li,p,td,blockquote,strong';
+  document.querySelectorAll(sel).forEach(function(el){
+    if (el.querySelector('.num')) return;
+    var html = el.innerHTML;
+    // 保护标签与已有标记
+    var out = html.replace(/(?<!<[^>]*)(?<!\/)([0-9][0-9,\.]*(?:\s?%|\+|\s?K|\s?万字|\s?件|\s?份|\s?个|\s?项|\s?版|\s?款|\s?条|\s?类|\s?张|\s?次)?)/g, function(m, p1, offset){
+      if (/class="(num|ph)"/.test(html.slice(Math.max(0,offset-24), offset))) return m;
+      if (/<[^>]*$/.test(html.slice(0, offset))) return m;
+      return '<span class="num">' + m + '</span>';
+    });
+    if (out !== html && !/<(table|thead|tbody|tr)/i.test(html)) el.innerHTML = out;
+  });
+});
+</script>
+</body>
+</html>
