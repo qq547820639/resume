@@ -19,6 +19,10 @@ m = re.search(r'<h1>(.*?)</h1>\s*<p><strong>(.*?)</strong></p>\s*<p>(.*?)</p>', 
 name = m.group(1) if m else '潘灏'
 subtitle = m.group(2) if m else ''
 meta_line = m.group(3) if m else ''
+
+# 标题纯文本（供 <title> / <meta description> 使用，自动跟随源，避免版本间不一致）
+_raw = re.search(r'^\*\*(.+?)\*\*\s*$', md_text, re.M)
+title_plain = re.sub(r'（[^（）]*）\s*$', '', _raw.group(1)).strip() if _raw else '简历'
 if m:
     body = body.replace(m.group(0), '', 1)
 
@@ -197,8 +201,8 @@ html = f"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>潘灏 · AI 产品经理 / 产品负责人 · 简历</title>
-<meta name="description" content="潘灏 · AI 产品经理 / 产品负责人（B 端 · AI 原生产品方向）· 常驻深圳">
+<title>{name} · {title_plain} · 简历</title>
+<meta name="description" content="{name} · {title_plain} · 常驻深圳 · 随时到岗">
 <style>{CSS}</style>
 </head>
 <body>
