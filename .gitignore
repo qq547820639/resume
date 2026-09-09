@@ -2,3 +2,13 @@
 *.pdf
 backup/
 site/
+
+# 内部文档：含薪资策略、面试红线、核查风险，禁止推送公开仓库
+resume-latest.md
+面试问答准备卡.md
+投递目标清单.md
+FDE定位可行性分析与双轨策略.md
+信息采集汇总报告.md
+BOSS在线简历更新清单.md
+在线简历链接.md
+.codebuddy/
