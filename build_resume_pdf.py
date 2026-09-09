@@ -241,7 +241,7 @@ def build():
     doc = BaseDocTemplate(str(OUT), pagesize=A4,
                           leftMargin=19 * mm, rightMargin=19 * mm,
                           topMargin=17 * mm, bottomMargin=17 * mm,
-                          title='潘灏 · AI 产品经理 / 产品负责人 · 简历', author='潘灏')
+                          title=HEADER_TITLE, author='潘灏', subject=HEADER_TITLE)
     frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id='f')
     doc.addPageTemplates([PageTemplate(id='main', frames=[frame], onPage=on_page)])
     doc.build(story)
